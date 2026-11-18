@@ -99,7 +99,7 @@ erDiagram
 
 Patient, Clinic, Doctor, Appointment, Prescription, Medicine, Billing, Prescription_Details, Clinic_Inventory.
 
-The final tables are in [docs/database-design.md](docs/database-design.md).
+The final tables are in [database-design.md](database-design.md).
 
 ## Normalization
 
@@ -116,13 +116,5 @@ The design is in 3NF. `ClinicID` was removed from Appointment and Billing becaus
 
 ## Security
 
-Access is based on roles (doctor, billing staff, admin staff, patient). Each role only sees the data it needs. Data is protected with encryption. See [docs/security.md](docs/security.md).
+Access is based on roles (doctor, billing staff, admin staff, patient). Each role only sees the data it needs. Data is protected with encryption. See [security.md](security.md).
 
-## Files
-
-```
-README.md
-docs/
-  database-design.md
-  security.md
-```
